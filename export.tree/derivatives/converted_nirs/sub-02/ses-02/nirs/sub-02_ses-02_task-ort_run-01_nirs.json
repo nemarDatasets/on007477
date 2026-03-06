@@ -1,7 +1,0 @@
-{
-  "NIRSChannelCount": 46,
-  "NIRSSourceOptodeCount": 46,
-  "NIRSDetectorOptodeCount": 46,
-  "SamplingFrequency": 10.0,
-  "TaskName": "ort"
-}
