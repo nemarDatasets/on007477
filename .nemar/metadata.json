@@ -2,6 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "TimeSeries BIDS converted",
+  "description": "A BIDS-converted neuroimaging dataset containing processed time-series fNIRS data from 18 subjects across two sessions. The dataset has been processed with independent component analysis (ICA) denoising and converted from MATLAB format to comply with BIDS conventions (v1.7.0) for enhanced accessibility and reproducibility in neuroimaging research. Original data source: OpenNeuro ds007477.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +10,45 @@
     "Zheng, Sha": {},
     "Yuan, Haodong": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds007477.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "NIRS"
     },
+    {
+      "term": "fNIRS"
+    },
+    {
+      "term": "near-infrared spectroscopy"
+    },
+    {
+      "term": "hemodynamic response"
+    },
+    {
+      "term": "independent component analysis"
+    },
+    {
+      "term": "denoising"
+    },
+    {
+      "term": "time-series analysis"
+    },
+    {
+      "term": "BIDS conversion"
+    },
+    {
+      "term": "signal processing"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "OpenNeuro"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on007477",
       "identifier_type": "URL",
@@ -24,57 +58,27 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007477",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007477.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
+  "resource_type_specific": "fNIRS Dataset",
   "modalities": [
     "nirs"
   ],
-  "resource_type_specific": "fNIRS Dataset",
   "sizes": [
-    "5.7 KB (2 files)"
+    "1.6 GB (129 files)"
   ],
   "formats": [
     ".json",
     ".m",
     ".md",
     ".snirf",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "A BIDS-converted fNIRS neuroimaging dataset containing time-series hemoglobin data from 18 subjects across two sessions with ICA denoising applied. The dataset includes standardized NIRS JSON sidecars with acquisition parameters (sampling frequency, channel count, source/detector mapping) and is provided in SNIRF format to facilitate reproducibility and data sharing. This dataset was converted from MATLAB format (TimeSeriesHbORT_18sub_twoSessionICAdenoise) using automated conversion tools.",
-  "keywords": [
-    {
-      "term": "NIRS"
-    },
-    {
-      "term": "fNIRS"
-    },
-    {
-      "term": "functional near-infrared spectroscopy"
-    },
-    {
-      "term": "brain imaging"
-    },
-    {
-      "term": "hemodynamics"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "time-series analysis"
-    },
-    {
-      "term": "ICA denoising"
-    },
-    {
-      "term": "SNIRF"
-    },
-    {
-      "term": "denoising"
-    },
-    {
-      "term": "hemoglobin"
-    }
-  ],
-  "source_hash": "fddd1c7d6c722d04cc57bbfc2bae09600abf1f77283aafe3f9fb469e04833348"
+  "source_hash": "2987196450b9be1d49b0817d2be1248ba78672044800d47d60f7c9a214c60053"
 }
