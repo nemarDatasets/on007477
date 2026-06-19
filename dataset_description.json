@@ -1,11 +1,17 @@
 {
-    "Name": "TimeSeries BIDS converted",
-    "BIDSVersion": "1.7.0",
-    "Authors": [
-        "Niu，Haijing",
-        "Zheng, Sha",
-        "Yuan, Haodong"
-    ],
-    "DatasetDOI": "doi:10.18112/openneuro.ds007477.v1.0.1",
-    "License": "CC0"
+  "Name": "TimeSeries BIDS converted",
+  "BIDSVersion": "1.7.0",
+  "Authors": [
+    "Niu，Haijing",
+    "Zheng, Sha",
+    "Yuan, Haodong"
+  ],
+  "DatasetDOI": "10.82901/nemar.on007477",
+  "License": "CC0",
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.18112/openneuro.ds007477.v1.0.1"
+    }
+  ],
+  "Version": "1.0.0"
 }
