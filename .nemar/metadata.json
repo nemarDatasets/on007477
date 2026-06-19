@@ -2,7 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "TimeSeries BIDS converted",
-  "description": "A BIDS-converted neuroimaging dataset containing processed time-series fNIRS data from 18 subjects across two sessions. The dataset has been processed with independent component analysis (ICA) denoising and converted from MATLAB format to comply with BIDS conventions (v1.7.0) for enhanced accessibility and reproducibility in neuroimaging research. Original data source: OpenNeuro ds007477.",
+  "description": "A BIDS-converted neuroimaging dataset containing time-series fNIRS data from 18 subjects across two sessions. The dataset includes near-infrared spectroscopy (NIRS) measurements with independent component analysis (ICA) denoising applied. Data were collected using continuous-wave NIRS with simultaneous measurement of oxygenated and deoxygenated hemoglobin concentrations. This dataset is derived from TimeSeriesHbORT_18sub_twoSessionICAdenoise and has been reformatted to comply with BIDS standards. NOTE: This dataset is currently under validation. Critical NIRS metadata fields (SamplingFrequency, NIRSChannelCount, source/detector mapping) and BIDS compliance must be confirmed before public release.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -30,22 +30,19 @@
       "term": "denoising"
     },
     {
+      "term": "preprocessing"
+    },
+    {
       "term": "time-series analysis"
     },
     {
-      "term": "BIDS conversion"
-    },
-    {
-      "term": "signal processing"
-    },
-    {
-      "term": "neuroimaging"
+      "term": "multi-session"
     },
     {
       "term": "BIDS"
     },
     {
-      "term": "OpenNeuro"
+      "term": "neuroimaging"
     }
   ],
   "related_identifiers": [
