@@ -1,29 +1,80 @@
 {
   "version": "2.0",
-  "dataset_id": "on007477",
-  "source": "openneuro",
-  "source_id": "ds007477",
+  "pipeline_stage": "enriched",
   "title": "TimeSeries BIDS converted",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Niu，Haijing": {},
     "Zheng, Sha": {},
     "Yuan, Haodong": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007477.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on007477",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007477",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
+  "modalities": [
     "nirs"
   ],
-  "datatypes": [
-    "nirs"
-  ]
+  "resource_type_specific": "fNIRS Dataset",
+  "sizes": [
+    "5.7 KB (2 files)"
+  ],
+  "formats": [
+    ".json",
+    ".m",
+    ".md",
+    ".snirf",
+    ".tsv"
+  ],
+  "description": "A BIDS-converted fNIRS neuroimaging dataset containing time-series hemoglobin data from 18 subjects across two sessions with ICA denoising applied. The dataset includes standardized NIRS JSON sidecars with acquisition parameters (sampling frequency, channel count, source/detector mapping) and is provided in SNIRF format to facilitate reproducibility and data sharing. This dataset was converted from MATLAB format (TimeSeriesHbORT_18sub_twoSessionICAdenoise) using automated conversion tools.",
+  "keywords": [
+    {
+      "term": "NIRS"
+    },
+    {
+      "term": "fNIRS"
+    },
+    {
+      "term": "functional near-infrared spectroscopy"
+    },
+    {
+      "term": "brain imaging"
+    },
+    {
+      "term": "hemodynamics"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "time-series analysis"
+    },
+    {
+      "term": "ICA denoising"
+    },
+    {
+      "term": "SNIRF"
+    },
+    {
+      "term": "denoising"
+    },
+    {
+      "term": "hemoglobin"
+    }
+  ],
+  "source_hash": "fddd1c7d6c722d04cc57bbfc2bae09600abf1f77283aafe3f9fb469e04833348"
 }
