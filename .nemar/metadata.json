@@ -1,8 +1,8 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "TimeSeries BIDS converted",
-  "description": "A BIDS-converted neuroimaging dataset containing time-series fNIRS data from 18 subjects across two sessions. The dataset includes near-infrared spectroscopy (NIRS) measurements with independent component analysis (ICA) denoising applied. Data were collected using continuous-wave NIRS with simultaneous measurement of oxygenated and deoxygenated hemoglobin concentrations. This dataset is derived from TimeSeriesHbORT_18sub_twoSessionICAdenoise and has been reformatted to comply with BIDS standards. NOTE: This dataset is currently under validation. Critical NIRS metadata fields (SamplingFrequency, NIRSChannelCount, source/detector mapping) and BIDS compliance must be confirmed before public release.",
+  "description": "A functional near-infrared spectroscopy (fNIRS) time-series dataset converted to BIDS format from a MATLAB file containing hemoglobin concentration time series (HbO) from 18 subjects across two sessions, with ICA-based denoising applied. The dataset is a BIDS conversion of an original deposit and includes NIRS recordings and associated metadata.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,37 +12,19 @@
   },
   "keywords": [
     {
-      "term": "NIRS"
-    },
-    {
       "term": "fNIRS"
     },
     {
       "term": "near-infrared spectroscopy"
     },
     {
-      "term": "hemodynamic response"
+      "term": "hemoglobin concentration"
     },
     {
-      "term": "independent component analysis"
-    },
-    {
-      "term": "denoising"
-    },
-    {
-      "term": "preprocessing"
-    },
-    {
-      "term": "time-series analysis"
-    },
-    {
-      "term": "multi-session"
+      "term": "ICA denoising"
     },
     {
       "term": "BIDS"
-    },
-    {
-      "term": "neuroimaging"
     }
   ],
   "related_identifiers": [
@@ -52,14 +34,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007477",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds007477.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007477",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "fNIRS Dataset",
@@ -67,7 +49,7 @@
     "nirs"
   ],
   "sizes": [
-    "1.6 GB (129 files)"
+    "1.53 GB (129 files)"
   ],
   "formats": [
     ".json",
@@ -77,5 +59,6 @@
     ".tsv",
     ".yml"
   ],
+  "methods_description": "Data were converted from a MATLAB .mat file (TimeSeriesHbORT_18sub_twoSessionICAdenoise) to BIDS using the convert_mat_to_bids.py script. The README notes that sampling frequency, channel count, and source/detector mapping in the *_nirs.json files should be reviewed.",
   "source_hash": "2987196450b9be1d49b0817d2be1248ba78672044800d47d60f7c9a214c60053"
 }
